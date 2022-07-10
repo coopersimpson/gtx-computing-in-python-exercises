@@ -35,7 +35,6 @@
 #Last, First Middle
 
 def name_refixer(name_list):
-    count = 0
     final_list = []
     for item in name_list:
         if "," not in item:
@@ -46,7 +45,6 @@ def name_refixer(name_list):
             string1 = string1 + " " + split_string[2]
             final_list.append(string1)
         else:
-
             final_list.append(item)
     return final_list    
 
