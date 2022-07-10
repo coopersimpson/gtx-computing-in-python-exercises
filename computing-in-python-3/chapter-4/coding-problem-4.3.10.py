@@ -36,29 +36,19 @@
 
 def name_refixer(name_list):
     count = 0
+    final_list = []
     for item in name_list:
         if "," not in item:
-            # print(item)
             split_string = item.split(" ")
             popped = split_string.pop()
             split_string.insert(0, popped)
+            string1 = ", ".join(split_string[0:2])
+            string1 = string1 + " " + split_string[2]
+            final_list.append(string1)
+        else:
 
-            # use counter to insert into correct index
-
-            name_list[count] = split_string
-            
-            
-
-
-
-            # print(str1)
-            print(name_list)
-
-            count += 1
-        count += 1
-        print(name_list)
-    
-
+            final_list.append(item)
+    return final_list    
 
 
 #Below are some lines of code that will test your function.
