@@ -57,21 +57,6 @@ def reader(filename):
     input_file.close()
     return output_dict
 
-# def reader(filename):
-#     input_file = open(filename, "r")
-#     output_list = []
-#     for line in input_file:
-#         line = line.strip().split()
-#         line[0] = int(line[0])
-#         line[2] = int(line[2])
-#         line[3] = int(line[3])
-#         line[4] = float(line[4])
-#         line = tuple(line)
-#         output_list.append(line)
-#     input_file.close()
-#     return output_list
-
-
 #Below are some lines of code that will test your function.
 #You can change the value of the variable(s) to test your
 #function with different inputs.
